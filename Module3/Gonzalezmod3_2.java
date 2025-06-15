@@ -4,7 +4,7 @@
 *6/15/2025
 *The purpose of this assignment is to remove duplicate elements from an ArrayList
 */
-
+ 
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashSet;
