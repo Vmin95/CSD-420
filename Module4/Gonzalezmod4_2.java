@@ -1,7 +1,7 @@
 /*
 *Julia Gonzalez
 *Assignment 4.2
-*6/15/2025
+*6/15/2025 
 */
 
 /* The purpose of this program is to test the time difference between an iterator and the getIndex method when traversing a LinkedList
