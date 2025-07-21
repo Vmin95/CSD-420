@@ -1,0 +1,21 @@
+.display-area {
+    -fx-background-color: #e0f5e6;
+    -fx-border-color:grey;
+    -fx-border-width: 1;
+    -fx-padding: 5px;
+
+}
+
+.title{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+.heading{
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-background-color: #a6b4aa;
+    -fx-text-fill: #ffffff
+
+}

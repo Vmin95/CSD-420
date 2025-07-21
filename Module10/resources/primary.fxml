@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mod10.PrimaryController">
+   <children>
+      <Label text="Fans Database Software" styleClass = "title"/>
+      <HBox spacing = "20.0">
+         <children>
+            <VBox alignment="CENTER" spacing="10.0" styleClass = "display-area">
+               <children>
+                  <Label text ="Search Records" styleClass = "heading"/>
+                  <Label text = "Please enter the ID of the fan you wish to view"/>
+                  <Label text =  "(Numbers 1-10)"/>
+                  <TextField fx:id = "ID" promptText = "enter ID"/>
+                  <Button fx:id = "displayButton" text = "Display" onAction="#display" styleClass = "button"/>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" styleClass = "display-area">
+               <Label text = "Display Area" styleClass = "heading"/>
+               <Label text = "To update a record, edit the text in the display field"/>
+               <GridPane Hgap = "10.0" Vgap = "10.0">
+                  <children>
+                     <Label text= "ID:"  GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                     <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                     <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                     <Label text="Favorite Team:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                     <TextField fx:id = "idField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                     <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                     <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                     <TextField fx:id="favoriteTeamField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                  </children>
+                  <padding>
+                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  </padding>
+               </GridPane>
+               <Button fx:id = "updatetable" text="Update Records" onAction = "#update" styleClass = "button"/>
+               
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
